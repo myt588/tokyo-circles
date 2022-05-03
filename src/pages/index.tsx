@@ -16,8 +16,11 @@ export default function Home() {
 
       <main>
         <h1 className="text-center my-5 text-3xl font-bold underline">
-          Something Amazing In Progress...
+          东京圈-日本投资移民咨询-最透明的价格和最优值的服务为您往日本移居助力
         </h1>
+        <h2 className="text-center my-5 text-3xl font-bold underline">
+          Something Amazing In Progress...
+        </h2>
       </main>
     </div>
   );
