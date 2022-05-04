@@ -103,13 +103,15 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
             </dl>
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
               <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
-              <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
-                <Link href={discussUrl(slug)} rel="nofollow">
-                  {'Discuss on Twitter'}
-                </Link>
-                {` • `}
-                <Link href={editUrl(slug)}>{'View on GitHub'}</Link>
-              </div>
+              {false && (
+                <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
+                  <Link href={discussUrl(slug)} rel="nofollow">
+                    {'Discuss on Twitter'}
+                  </Link>
+                  {` • `}
+                  <Link href={editUrl(slug)}>{'View on GitHub'}</Link>
+                </div>
+              )}
               <Comments frontMatter={content} />
             </div>
             <footer>
@@ -156,7 +158,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                   href="/blog"
                   className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                 >
-                  &larr; Back to the blog
+                  &larr; 所有讯息
                 </Link>
               </div>
             </footer>
