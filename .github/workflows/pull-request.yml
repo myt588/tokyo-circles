@@ -24,9 +24,6 @@ jobs:
       - name: Install dependencies (with cache)
         uses: bahmutov/npm-install@v1
 
-      - name: Check types
-        run: npm run type-check
-
       - name: Check linting
         run: npm run lint
 
